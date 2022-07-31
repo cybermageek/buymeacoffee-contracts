@@ -1,13 +1,18 @@
-# Sample Hardhat Project
+# Buy me a coffee
 
-This project demonstrates a basic Hardhat use case. It comes with a sample contract, a test for that contract, and a script that deploys that contract.
+### Deploy
 
-Try running some of the following tasks:
+Setting network in `hardhat.config.ts`
 
 ```shell
-npx hardhat help
-npx hardhat test
-GAS_REPORT=true npx hardhat test
-npx hardhat node
-npx hardhat run scripts/deploy.ts
+npx hardhat run scripts/deploy.ts --network mumbai
+```
+
+### Withdraw
+
+Setting private key in `.env`
+
+```shell
+// withdraw money from contract address to your wallet
+npx hardhat run scripts/withdraw.ts
 ```
